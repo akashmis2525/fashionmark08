@@ -137,7 +137,7 @@ const App = () => {
                {collections.map((c, i) => (
                   <motion.div key={i} whileHover={{ y: -10 }} style={styles.catCard} className="media-frame" onClick={() => handleCatalogueClick(c)}>
                      <div style={styles.catImgWrap}>
-                        <img src={c.img} style={styles.fullImg} alt={c.title} crossOrigin="anonymous" />
+                        <img src={c.img} style={styles.fullImg} alt={c.title} />
                         <div style={styles.catWatermark}>
                            <img src="/logo_main.png" style={{ height: '35px', opacity: 0.5 }} />
                            <span style={{ fontSize: '0.65rem', color: '#fff', opacity: 0.3, letterSpacing: '2px', fontWeight: 900 }}>SAAMRAJYA</span>
